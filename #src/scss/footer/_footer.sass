@@ -1,0 +1,115 @@
+.footer
+	background: #111a3a
+	color: #f4f6fe
+	padding-top: 8.2rem
+	@include media-breakpoint-down(sm)
+		padding: 8rem 1rem 0
+	&__social
+		height: auto
+		width: 100%
+		justify-content: flex-start
+		background: transparent
+		text-align: left
+		font-size: 1.6rem
+	.social__item
+		transition: 0.5s
+		&:hover, &:focus, &:active
+			color: $accent
+
+	.social__item:first-child
+		margin-left: 0
+	&__logo
+		margin-bottom: 3rem
+		text-align: left
+		// &-img, sourse
+		// 	margin-left: 0
+		// 	@include media-breakpoint-down(md)
+		// 		margin: 0
+
+	
+	&__text
+		width: 100%
+		font-size: 1.5rem
+		margin-bottom: 1.6rem
+	&__title
+		margin-bottom: 3.5rem
+		margin-top: 1.5rem
+		color: #f8f9fe
+		font-size: 2.2rem
+		line-height: 1.2
+		font-weight: 700
+	&__menu
+		width: 100%
+	&__item
+		font-size: 1.6rem
+		transition: 0.5s
+		margin-bottom: 1.3rem
+		&::before
+			content: ''
+			display: inline-block
+			height: 1px
+			width: 10px
+			background: #f8f9fe
+			vertical-align: middle
+			margin-right: 1.5rem
+	&__contacts
+		margin-bottom: 1.6rem
+		&-subtitle
+			font-weight: bold
+			margin-right: 5px
+	&__posts
+		width: 100%
+	&__post
+		padding-bottom: 1rem
+		margin-bottom: 2rem
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: flex-start
+		&:not(:last-child)
+			border-bottom: 1px solid #E8E8E8
+		&-date
+			margin-top: 0.5rem
+			width: 100%
+			display: block
+			font-size: 1.1rem
+	&__img, sourse
+		width: 80px
+		height: auto
+		&-wrapper
+			width: auto
+			margin-right: 2rem
+	&__rights
+		padding: 2rem 0
+		// height: 66px
+		margin-top: 5.3rem
+		border-top: 1px solid rgba(255,255,255,.23)
+		@include media-breakpoint-down(md)
+			height: auto
+			margin-top: 3.3rem
+
+
+.rights
+	color: #f8f9fe
+	&__text
+		font-size: 1.6rem
+		@include media-breakpoint-down(md)
+			font-size: 1.4rem
+			text-align: center
+	&__list
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		@include media-breakpoint-down(md)
+			justify-content: center
+			margin-top: 1rem
+		@include media-breakpoint-down(sm)
+			flex-wrap: wrap
+	&__item
+		font-size: 1.4rem
+		margin-left: 2rem
+		transition: .5s
+		&:hover, &:focus
+			color: $accent
+			
+

@@ -1,0 +1,140 @@
+.section-articles
+	background: #fff
+	padding: 9.6rem 0 12rem
+	position: relative
+	
+
+.articles
+	margin: 5rem auto 0
+	width: 98%
+	@include media-breakpoint-down(md) 
+		width: 90%
+	@media (max-width: 400.98px)
+		width: 98%
+	&:hover ~ .articles__arrow, 
+	&:focus ~ .articles__arrow
+		opacity: 1
+		
+	&__headline, &__title
+		text-align: left
+		margin-left: 1rem
+	&__headline
+		margin-bottom: 1rem
+	&__range
+		margin-left: 10px
+
+	&__arrow
+		opacity: 0
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		background: $accent
+		color: #fff
+		font-size: 1.9rem
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		top: 50%
+		z-index: 9
+		user-select: none
+		transition: .5s
+		cursor: pointer
+		@include media-breakpoint-down(md)
+			display: none
+		&:hover ~ .articles__arrow, 
+		&:focus ~ .articles__arrow
+			opacity: 1
+		&:hover, &:focus
+			opacity: 1
+			background: #121b51
+		&-prev
+			left: 15px
+		&-next
+			right: 15px	
+
+
+.article
+	background: #fff
+	border: 1px solid #ebebeb
+	text-align: left
+	box-sizing: border-box
+	&__img-wrapper
+		width: 100%
+		height: 250px
+		position: relative
+		overflow: hidden
+		@include media-breakpoint-down(md)
+			height: auto
+	&__img, sourse
+		width: 100%
+		height: auto
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translate(-50%, 0)
+		@include media-breakpoint-down(md) 
+			position: static
+			transform: translate(0, 0)
+	&__category
+		display: inline-block
+		padding: 0 1.6rem
+		background: $accent
+		font-size: 1rem
+		line-height: 1.9
+		font-weight: 700
+		color: #fff
+		border-radius: 5px
+		position: absolute
+		left: 30px
+		top: 30px
+		text-transform: uppercase
+		z-index: 1
+
+	&__content
+		padding: 2.5rem 3rem
+	&__meta
+		font-size: 1.4rem
+		font-weight: 500
+	&__meta-name
+		margin-right: 1.2rem
+		&::after
+			content: ''
+			display: inline-block
+			width: 1px
+			height: 14px
+			margin: 0 1.2rem
+			background: $textcolor
+	&__title
+		min-height: 50px
+		margin: 1rem 0 0.7rem
+		font-size: 2.1rem
+		line-height: 1.2
+		font-weight: 700
+		color: $titlecolor
+		transition: 0.5s
+		@include media-breakpoint-down(md) 
+			min-height: 0
+		&:hover, &:focus
+			color: $accent
+	&__body
+		margin: 1.6rem 0 1.5rem
+		overflow: hidden
+		max-height: 48px
+	&__excert
+		display: inline-block
+		text-transform: capitalize
+		font-weight: 600
+		transition: color .3s
+		&:hover, &:focus
+			color: $accent
+		&::after
+			content: '\f105'
+			text-transform: none
+			font-weight: 900
+			font-family: "Font Awesome 5 Free"
+			display: inline-block
+			margin-left: 1rem
+			vertical-align: middle
+
+

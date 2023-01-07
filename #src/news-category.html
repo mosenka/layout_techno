@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <!-- micromodal -->
+    <link rel="stylesheet" href="css/micromodal.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+	<header class="header">
+		@@include('./html/header/navbar.html')
+		<!-- breadctumbs -->
+		@@include('./html/header/breadctumbs.html')
+	</header>
+
+	<main class="main main_news">
+		<div class="container-lg">
+			<div class="row">
+				<div class="col-12">
+					<div class="wrapper wrapper-left">
+						<aside class="sidebar sidebar_news">
+							<div class="search news__card">
+								<form action="" class="search__form">
+									<div class="search__item">
+										<input type="text" class="search__input" placeholder="Search here">
+										<button type="submit" class="search__button"><i class="fas fa-search"></i></button>
+									</div>
+								</form>
+							</div>
+							<div class="popular-posts news__card">
+								<h3 class="news__title">Popular posts</h3>
+								<div class="range news__range"><span class="range__circle"></span></div>
+								<div class="popular-posts__wrapper">
+									<div class="popular-post">
+										<a href="" class="popular-post__img-wrapper">
+											<img src="./img/articles/article2.jpg" alt="" class="popular-post__img">
+										</a>
+										<div class="popular-post__inner">
+											<a href="" class="popular-post__text">
+												Tiktok Illegally collecting data sharing
+											</a>
+											<span class="popular-post__date">October 22, 2020</span>
+										</div>
+									</div>
+									<div class="popular-post">
+										<a href="" class="popular-post__img-wrapper">
+											<img src="./img/articles/article4.jpg" alt="" class="popular-post__img">
+										</a>
+										<div class="popular-post__inner">
+											<a href="" class="popular-post__text">
+												How can use our latest news by
+											</a>
+											<span class="popular-post__date">October 22, 2020</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="categories news__card">
+								<h3 class="news__title">Popular categories</h3>
+								<div class="range news__range"><span class="range__circle"></span></div>
+								<div class="categories__wrapper">
+									<p class="categories__item">Design</p>
+									<p class="categories__item">Development</p>
+									<p class="categories__item">Sass</p>
+									<p class="categories__item">Wordpress</p>
+								</div>
+							</div>
+							<div class="tags news__card">
+								<h3 class="news__title">Popular tags</h3>
+								<div class="range news__range"><span class="range__circle"></span></div>
+								<div class="tags__wrapper">
+									<a href="" class="tags__item">Agency</a>
+									<a href="" class="tags__item">Business</a>
+									<a href="" class="tags__item">Clean</a>
+									<a href=""  class="tags__item">Creative</a>
+									<a href="" class="tags__item">Modern</a>
+									<a href="" class="tags__item">Popular</a>
+									<a href="" class="tags__item">Agency</a>
+								</div>
+							</div>
+							<div class="categories news__card">
+								<h3 class="news__title">Archives</h3>
+								<div class="range news__range"><span class="range__circle"></span></div>
+								<div class="categories__wrapper">
+									<a href=""		class="categories__item">October 2020</a>
+									
+								</div>
+							</div>
+						</aside>
+						<div class="content content_category">
+							<div class="news-category">
+								<img src="./img/articles/article1.jpg" alt="" class="new__img">
+								<div class="new__content">
+									<div class="new__meta">
+										<span class="new__meta-name">Esalon</span>
+										<span class="new__meta-date">October 22, 2020</span>
+									</div>
+									<h3 class="new__subtitle"><a href="" class="news__link">Setting the mood with incense</a></h3>
+									<div class="new__text">
+										<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio enim, sapiente ea molestias dolore vitae sed sint officia, fugit magni eaque cumque, ex accusantium labore quibusdam at! A ut, provident iusto nobis, ea pariatur amet dolorem officia sit ullam error facilis repudiandae est!</p>
+										
+									</div>
+								</div>
+							</div>
+							<div class="news-category">
+								<img src="./img/articles/article1.jpg" alt="" class="new__img">
+								<div class="new__content">
+									<div class="new__meta">
+										<span class="new__meta-name">Esalon</span>
+										<span class="new__meta-date">October 22, 2020</span>
+									</div>
+									<h3 class="new__subtitle"><a href="" class="news__link">Setting the mood with incense</a></h3>
+									<div class="new__text">
+										<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio enim, sapiente ea molestias dolore vitae sed sint officia, fugit magni eaque cumque, ex accusantium labore quibusdam at! A ut, provident iusto nobis, ea pariatur amet dolorem officia sit ullam error facilis repudiandae est!</p>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </main>
+    
+    <!-- popup -->
+    @@include('html/main/contact-form.html')
+    <!-- footer -->
+    @@include('html/footer/footer.html')
+
+    <a href="" class="scroll" id="up"><i class="fas fa-angle-up"></i></a>
+
+
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/gsap/gsap.min.js"></script>
+    <script src="libs/micromodal.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

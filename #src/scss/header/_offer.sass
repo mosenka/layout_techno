@@ -1,0 +1,137 @@
+.offer
+	min-height: calc(100vh - 110px)
+	position: relative
+	&:hover
+		.offer__arrow-prev
+			left: 50px
+		.offer__arrow-next
+			right: 50px
+		@include media-breakpoint-down(md) 
+			.offer__arrow
+				display: none
+
+		
+	&__slide
+		min-height: calc(100vh - 110px)
+		position: relative
+		overflow: hidden
+	&__img, source
+		height: 100%
+		min-height: auto
+		width: auto
+		min-width: 100%
+		display: block
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+	&__wrapper
+		position: relative
+		z-index: 3
+		color: #fff
+		height: 100%
+		width: 1320px
+		min-width: 320px
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		justify-content: center
+		box-sizing: border-box
+		padding: 20px 0 110px
+		@include media-breakpoint-down(xxl)
+			width: 1140px
+		@include media-breakpoint-down(xl)
+			width: 960px
+		@include media-breakpoint-down(lg)
+			width: 720px
+			padding: 40px 0
+		@include media-breakpoint-down(md)
+			width: 540px
+			align-items: center
+			padding: 100px 0
+			
+		@include media-breakpoint-down(md)
+			width: 100%
+		@include media-breakpoint-down(sm)
+			padding: 50px 0
+	&__wrapper > *
+		width: 60%
+		@include media-breakpoint-down(xl)
+			width: 70%
+		@include media-breakpoint-down(lg)
+			width: 100%
+	&__title
+		font-size: 6rem
+		font-weight: 800
+		line-height: 1.1
+		opacity: 0
+		transform: translate3d(0, 100%, 0)
+		@include media-breakpoint-down(md)
+			font-size: 3rem
+			text-align: center
+	&__discription
+		font-size: 1.8rem
+		margin: 25px 0 48px
+		font-weight: 400
+		width: 56%
+		opacity: 0
+		transform: translate3d(0, 100%, 0)
+		@include media-breakpoint-down(md)
+			width: 98%
+			text-align: center
+		
+	&__button-wrapper
+		opacity: 0
+		transform: translate3d(0, 100%, 0)
+		@include media-breakpoint-down(md)
+			text-align: center
+		// max-width: 25px
+	&__arrow
+		background: transparent
+		width: 56px
+		height: 56px
+		border: 2px solid #fff
+		color: #fff
+		border-radius: 100%
+		box-shadow: 0 0 5px rgb(0 0 0 / 10%)
+		position: absolute
+		top: 50%
+		z-index: 99
+		display: flex
+		align-items: center
+		justify-content: center
+		transition: all 0.3s ease 0s
+		cursor: pointer
+		user-select: none
+		@include media-breakpoint-down(md) 
+			display: none
+		&:hover, &:focus
+			background: rgba(255, 255, 255, 0.2)
+		&-prev::after,
+		&-next::after
+			font-family: "Font Awesome 5 Free"
+			font-weight: 600
+			font-size: 25px
+		&-prev::after
+			content: "\f104"
+		&-next::after
+			content: '\f105'
+		&-prev
+			left: -60px
+			// transform: translate(-200%, 0)
+		&-next
+			right: -60px
+			// transform: translate(200%, 0)
+
+
+
+
+
+
+
+	
+	
+	
+
+
+		

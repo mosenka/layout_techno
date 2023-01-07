@@ -1,0 +1,26 @@
+.statistic
+	&__container
+		position: relative
+		max-width: 80%
+		padding: 6rem 3rem
+		background: #f1f4ff
+		@include media-breakpoint-down(md) 
+			padding: 2rem 1rem
+		@include media-breakpoint-down(sm) 
+			max-width: 90%
+	&__range
+		margin: 1.5rem auto
+	&__desc
+		margin: 3rem auto
+		font-size: 1.4rem
+		text-align: center
+		&::before
+			content: '*'
+			margin-right: 0.5rem
+	&__wrapper
+		width: 100%
+		height: auto
+		margin-top: 3rem
+		&::not(:last-child)
+			margin-bottom: 2rem
+		

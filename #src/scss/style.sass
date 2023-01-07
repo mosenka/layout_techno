@@ -1,0 +1,206 @@
+@import "../../node_modules/reset-css/sass/reset"
+
+@import "assets/mixins"
+    
+@import "assets/fonts"
+
+@import "assets/vars"
+
+/* bootstrap-grid */
+@import '../../node_modules/bootstrap/scss/bootstrap-grid'
+// @import '../../node_modules/bootstrap/scss/bootstrap'
+
+/* swiper */
+@import "../../node_modules/swiper/swiper"
+
+html
+    font-size: 10px
+    box-sizing: border-box
+    -ms-overflow-style: scrollbar
+
+*, *::before, *::after 
+   box-sizing: inherit
+    
+    
+body 
+    font-family: $userfont
+    font-size: $fontsize
+    line-height: $lineheight
+    font-weight: 400
+    color: $textcolor
+    min-width: 320px
+    position: relative
+    overflow-x: hidden
+    background-color: #fff
+
+a
+    text-decoration: none
+    color: inherit
+    font: inherit
+ul, li
+    list-style: none
+
+.text-blue
+    color: $accent
+
+.range
+    position: relative
+    height: 5px
+    width: 90px
+    border-radius: 30px
+    background: #aec6ef
+    margin: 1.5rem auto
+    &__circle
+        display: block
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        position: absolute
+        left: 0
+        top: -2.5px
+        background: $accent
+
+.headline
+    text-align: center
+    color: $accent
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 5px
+    margin-bottom: 5px
+
+.title
+    text-align: center
+    color: $titlecolor
+    font-size: 3.9rem
+    font-weight: 800
+    margin-bottom: 0
+    text-transform: capitalize
+    line-height: 1.2
+    @include media-breakpoint-down(lg) 
+        font-size: 3rem
+    @include media-breakpoint-down(md)
+        font-size: 2.8rem 
+    &-white
+        color: #fff
+
+.scroll
+    position: fixed
+    right: 30px 
+    bottom: 30px
+    width: 60px
+    height: 60px
+    font-size: 3.4rem
+    background: $accent
+    color: #fff
+    border-radius: 50%
+    display: none
+    align-items: center
+    justify-content: center
+    transition: .3s
+    z-index: 999
+
+/* modal */
+.modal__close
+    position: absolute
+    top: 1rem
+    right: 1rem
+    color: $accent
+    border: none
+    outline: none
+    background: transparent
+    font-size: 3rem
+    cursor: pointer
+    @include media-breakpoint-down(sm) 
+        top: 0
+        right: 0
+
+/* page layout */
+
+.main_news
+    background: #f6f6f6
+.main_decisions
+    background: #ffffff
+
+.wrapper
+    width: 100%
+    margin: 8rem 0
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    @include media-breakpoint-down(md) 
+        flex-wrap: wrap
+    &-left
+        flex-direction: row-reverse
+        .sidebar
+            margin-left: 3%
+            @include media-breakpoint-down(md) 
+                margin-left: 0
+
+.sidebar
+    flex: 0 1 32%
+    margin-right: 3%
+    @include media-breakpoint-down(md) 
+        flex: 0 1 100%
+        margin-right: 0
+    &_news
+        @include media-breakpoint-down(md) 
+            order: 2
+    &_sidebar
+        @include media-breakpoint-down(md) 
+            margin-bottom: 2rem
+.content
+    flex: 0 1 65%
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05)
+    border-radius: 10px
+    background: #fff
+    @include media-breakpoint-down(md) 
+        flex: 0 1 100%
+    &_news
+        @include media-breakpoint-down(md) 
+            order: 1
+    &_category
+        box-shadow: none
+        background: transparent
+        border-radius: 0
+    &_content
+        @include media-breakpoint-down(md) 
+            margin-top: 2rem
+
+
+
+/* buttons */
+@import 'assets/buttons'
+
+/* header */
+@import 'header/header'
+// /* main */
+@import 'main/main'
+/* map */
+@import 'contacts/map'
+
+/* footer */
+@import 'footer/footer'
+
+
+/* decisions page*/
+@import 'decisions/decision'
+/* decisions index */
+@import 'decisions/decisions'
+/* sidebar*/
+@import 'decisions/sidebar'
+/* details*/
+@import 'contacts/details'
+
+/* news*/
+@import 'news'
+
+/* news-category*/
+@import 'category/news-category'
+
+
+img[data-sizes="auto"] 
+    display: block
+    width: 100%
+
+

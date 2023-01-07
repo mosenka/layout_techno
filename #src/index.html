@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- icons -->
+    <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="css/flaticon.min.css" /> -->
+    <!-- micromodal -->
+    <!-- <link rel="stylesheet" href="css/micromodal.min.css"> -->
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Company Techno</title>
+</head>
+<body>
+
+    <!-- header -->
+    @@include('html/header/header.html')
+    <main class="main">
+        @@include('html/main/main.html')
+    </main>
+    <!-- footer -->
+    @@include('html/footer/footer.html')
+
+    <a href="" class="scroll" id="up"><i class="fas fa-angle-up"></i></a>
+
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('link[href="css/style.min.css"]').before('<link rel="stylesheet" href="css/all.min.css" />');
+            $('link[href="css/style.min.css"]').before('<link rel="stylesheet" href="css/flaticon.min.css" />');
+            $('link[href="css/style.min.css"]').before('<link rel="stylesheet" href="css/micromodal.min.css">');
+            
+        });
+
+    </script>
+    <script src="js/lazysizes.min.js" async></script>
+    <script src="libs/swiper/swiper-bundle.min.js" defer></script>
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/micromodal.min.js" defer></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

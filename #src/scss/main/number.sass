@@ -1,0 +1,94 @@
+.section-number
+	margin-top: -81px
+	position: relative
+	z-index: 3
+	background: transparent
+	&::after
+		content: ''
+		display: block
+		width: 100%
+		height: calc(100% - 81px)
+		position: absolute
+		top: 81px
+		left: 0
+		background: #eff2f7
+		z-index: -1
+.number
+	&__wrapper
+		width: 100%
+		background-color: rgba(255, 255, 240, .5)
+		background-image: url("../img/bg_number.png")
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		padding: 6rem 0 5.5rem
+		color: #232323
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-around
+		position: relative
+		@include media-breakpoint-down(xl)
+			width: 95%
+			margin: 0 auto
+		@include media-breakpoint-down(lg)
+			flex-wrap: wrap
+		@include media-breakpoint-down(md)
+			width: 98%
+			justify-content: center
+			align-items: center
+
+		&::after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			background: rgba(255, 255, 255, 1)
+			opacity: .9
+	&__item
+		position: relative
+		z-index: 2
+		display: flex
+		@include media-breakpoint-down(lg)
+			width: 40%
+			margin-bottom: 30px
+		@include media-breakpoint-down(md)
+			width: 100%
+			flex-direction: column
+			justify-content: center
+			align-items: center
+
+
+	&__icon
+		margin-right: 1rem
+		width: 70px
+		height: 70px
+		background: $accent
+		color: #fff
+		border-radius: 50%
+		font-size: 3.1rem
+		display: flex
+		align-items: center
+		justify-content: center
+		@include media-breakpoint-down(md)
+			margin-right: 0
+			margin-bottom: 2rem
+	&__count
+		line-height: 1.3
+		font-size: 4.2rem
+		font-weight: 800
+	&__value
+		font-size: 4rem
+		margin-left: 5px
+	&__desc
+		text-transform: uppercase
+		font-size: 1.3rem
+		font-weight: 700
+
+
+
+
+

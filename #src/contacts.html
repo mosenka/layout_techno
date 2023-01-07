@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <!-- micromodal -->
+    <link rel="stylesheet" href="css/micromodal.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+	<header class="header">
+		@@include('./html/header/navbar.html')
+		<!-- breadctumbs -->
+		@@include('./html/header/breadctumbs.html')
+	</header>
+    
+    <main class="main contacts-page">
+		<div class="container-xl">
+			<div class="g-0 row">
+				<div class="col-12 col-lg-5">
+					<div class="details">
+						<div class="details__item">
+							<div class="details__icon"><i class="flaticon flaticon-placeholder"></i></div>
+							<div class="details__desc">
+								<p class="details__name">Location</p>
+								<p class="details__text">22 Baker Street, London,United Kingdom, W1U 3BW</p>
+							</div>
+						</div>
+						<div class="details__item">
+							<div class="details__icon"><i class="flaticon flaticon-call"></i></div>
+							<div class="details__desc">
+								<p class="details__name">Make A Call</p>
+								<a href=""class="details__text">+7-999-888-77-66</a>
+							</div>
+						</div>
+						<div class="details__item">
+							<div class="details__icon"><i class="flaticon flaticon-placeholder"></i></div>
+							<div class="details__desc">
+								<p class="details__name">Make A Mail</p>
+								<a href="mailto:test@mail.ru" class="details__text">test@mail.ru</a>
+							</div>
+						</div>
+						<div class="details__item">
+							<div class="details__icon"><i class="flaticon flaticon-snow-globe"></i></div>
+							<div class="details__desc">
+								<p class="details__name">Visit Our Website</p>
+								<a href="example.yoursite.com" class="details__text">example.yoursite.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-7">
+					<div class="contact-form">
+						<h2 class="contact-form__title">Get in touch</h2>
+						<form action="" class="contact-form__form">
+							<div class="contact-form__item">
+								<input type="text" class="contact-form__input" name="name" placeholder="name">
+								<span class="contact-form__error">Lorem ipsum dolor sit.</span>
+							</div>
+							<div class="contact-form__item">
+								<input type="text" class="contact-form__input" name="email" placeholder="email">
+							</div>
+							<div class="contact-form__item">
+								<input type="text" class="contact-form__input" name="phone" placeholder="phone">
+							</div>
+							<div class="contact-form__item">
+								<input type="text" class="contact-form__input" name="website" placeholder="website">
+							</div>
+							<div class="contact-form__item contact-form__item-message">
+								<textarea name="message" class="contact-form__input contact-form__textarea" cols="20" rows="9" placeholder="Your Message"></textarea>
+							</div>
+							<div class="contact-form__item contact-form__item-button">
+								<button type="submit" class="contact-form__submit">Free Consultancy</button>
+							</div>
+						</form>
+						<div class="contact-form__error-total">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus.</div>	
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<div class="g-0 container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="map" id="map">
+
+					</div>
+				</div>
+			</div>
+		</div>
+    </main>
+    <!-- popup -->
+    @@include('html/main/contact-form.html')
+    <!-- footer -->
+    @@include('html/footer/footer.html')
+
+    <a href="" class="scroll" id="up"><i class="fas fa-angle-up"></i></a>
+
+
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/gsap/gsap.min.js"></script>
+    <script src="libs/micromodal.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

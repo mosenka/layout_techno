@@ -1,0 +1,229 @@
+.news
+	&__title
+		color: $titlecolor
+		font-size: 2.1rem
+		font-weight: 700
+		margin-bottom: 1rem
+		text-transform: capitalize
+	&__range
+		margin: 0 0 3rem 0
+	&__card
+		width: 100%
+		margin-bottom: 4rem
+		background: #fff
+		padding: 3.5rem 3rem 3.5rem
+		border-radius: 8px
+		border: 1px solid #e6e6e6
+		box-shadow: 0 0 5px rgba(0,0,0,0.10)
+		// @include media-breakpoint-down(md) 
+		// 	margin-top: 8rem
+
+
+	
+	
+.new
+	width: 100%
+	&__img
+		width: 100%
+		height: auto
+		border-radius: 10px 10px 0 0
+
+	&__content
+		padding: 4.4rem	
+		padding-top: 3.8rem
+		img
+			border-radius: 0
+		@include media-breakpoint-down(sm) 
+			padding: 2rem
+			padding-top: 2.5rem
+	&__meta
+		font-size: 1.4rem
+		font-weight: 500
+		margin-bottom: 2.4rem
+	&__meta-name
+		margin-right: 1.2rem
+		&::after
+			content: ''
+			display: inline-block
+			width: 1px
+			height: 14px
+			margin: 0 1.2rem
+			background: $textcolor
+	&__text
+		p 
+			margin-bottom: 2rem
+	&__subtitle
+		margin: 1rem 0
+		font-size: 3rem
+		font-weight: 700
+		margin-right: 1rem
+		color: $titlecolor
+	&__social
+		width: 100%
+		padding-top: 4rem
+		border-top: 1px solid #e6e6e6
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		&-item
+			display: block
+			width: 40px
+			height: 40px
+			border: 1px solid #e6e6e6
+			border-radius: 5px
+			color: #565872
+			font-size: 1.5rem
+			display: flex
+			align-items: center
+			justify-content: center
+			transition: .3s
+			&:not(:last-child)
+				margin-right: 1rem
+			&:hover, &:focus
+				background: $accent
+				color: #fff
+				border-color: $accent
+				
+			
+.search
+	@include media-breakpoint-down(md) 
+		margin-top: 8rem
+	&__item
+		width: 100%
+		position: relative
+	&__input
+		display: block
+		width: 100%
+		background: #fff 
+		height: 60px
+		padding-left: 1rem
+		border: 1px solid #ced4da
+		color: #616161
+		transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+		border-radius: 8px
+		font-family: $userfont
+		font-size: 1.6rem
+		&::placeholder
+			text-transform: capitalize
+		&:focus
+			outline-color: transparent
+	&__button
+		height: 100%
+		width: 50px
+		position: absolute
+		right: 0
+		top: 50%
+		font-size: 1.8rem
+		color: #616161
+		background: transparent
+		border: none
+		outline: none
+		transform: translateY(-50%)
+		padding: 0
+		user-select: none
+	
+
+.popular-posts
+	&__wrapper
+		width: 100%
+	
+	
+.popular-post
+	padding-bottom: 1rem
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: flex-start
+	@media (max-width: 850.98px)
+		flex-wrap: wrap
+	@include media-breakpoint-down(md) 
+		flex-wrap: nowrap
+	&:not(:last-child)
+		margin-bottom: 2rem
+		border-bottom: 1px solid #E8E8E8
+	&__date
+		margin-top: 0.5rem
+		color: #616161
+		width: 100%
+		display: block
+		font-size: 1.5rem
+		@include media-breakpoint-down(lg) 
+			font-size: 1.3rem
+		@include media-breakpoint-down(md) 
+			font-size: 1.5rem
+	&__img, sourse
+		width: 80px
+		height: auto
+		border-radius: 5px
+		@media (max-width: 850.98px)
+			width: 100%	
+		@include media-breakpoint-down(md) 
+			width: 100px
+		@include media-breakpoint-down(sm) 
+			width: 80px
+		&-wrapper
+			width: auto
+			margin-right: 2rem
+			@media (max-width: 850.98px)
+				width: 100%
+				text-align: center
+			@include media-breakpoint-down(md) 
+				width: auto
+		
+	&__text
+		color: $titlecolor
+		font-weight: 700
+		width: 100%
+		font-size: 1.8rem
+		@include media-breakpoint-down(lg) 
+			font-size: 1.5rem
+		@include media-breakpoint-down(md) 
+			font-size: 1.8rem
+
+
+
+.categories
+	&__wrapper
+		width: 100%
+	&__item
+		display: block
+		padding: 1.5rem 0
+		border-top: 1px solid #E8E8E8
+		transition: .3s
+		color: #616161
+		&:hover, &:focus
+			color: $accent
+
+
+.tags
+	&__wrapper
+		width: 100%
+		display: flex
+		justify-content: flex-start
+		align-items: flex-start
+		flex-wrap: wrap
+		@media (max-width: 800.98px)
+			flex-direction: column
+		@include media-breakpoint-down(md) 
+			flex-direction: row
+	&__item
+		display: inline-block
+		padding: .5rem 1.1rem
+		text-transform: capitalize
+		text-align: center
+		background: #fff
+		border: 1px solid #e6e6e6
+		border-radius: 5px
+		color: #616161
+		margin: 0 5px 9px 0
+		transition: .3s
+		&:hover, &:active, &:focus
+			background: $accent
+			border-color: $accent
+			color: #fff
+			
+
+
+
+
+
